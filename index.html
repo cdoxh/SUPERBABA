@@ -656,15 +656,18 @@ body.tool-place { cursor:cell; }
       letter-spacing:0.27em;
       line-height:1;
     ">I WANT YOUR<br>CAMERA</div>
-    <button onclick="document.getElementById('cam-prompt-overlay').style.display='none'" style="
-      background:var(--yellow);
-      border:none; border-radius:26px;
-      font-family:'Kommuna-NormalBold', sans-serif;
-      font-size:clamp(28px, 4vw, 64px);
-      color:#000; letter-spacing:0.55em;
-      padding:10px 48px;
-      cursor:pointer;
-    ">ok</button>
+<button
+  onclick="document.getElementById('cam-prompt-overlay').style.display='none'; startCamera();"
+  style="
+    background:#00ff2b;
+    border:none; border-radius:26px;
+    font-family:'Kommuna-NormalBold', sans-serif;
+    font-size:clamp(28px, 4vw, 64px);
+    color:#000; letter-spacing:0.55em;
+    padding:10px 48px;
+    cursor:pointer;
+  "
+>ok</button>
   </div>
   <img src="./baba/babiy sprite2.png" alt="" style="
     position:absolute; right:0; top:12.5%;
@@ -1842,7 +1845,6 @@ new ResizeObserver(()=>{
 //boot
 initThree();
 cpUpdate();
-startCamera();
 </script>
 </body>
 </html>
